@@ -1,0 +1,58 @@
+﻿@model EMPDetails.Models.USerInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>USerInfo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.empname)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.empname)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.empAddress)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.empAddress)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.empDept)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.empDept)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.empMobile)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.empMobile)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.empid }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
